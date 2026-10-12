@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stephen — Software Developer</title>
-  <meta name="description" content="Portfolio of Stephen, software developer. Projects, about, and contact." />
+  <title>Stephen George — Software Developer</title>
+  <meta name="description" content="Portfolio of Stephen George, software developer. Projects, about, and contact." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,9 +22,9 @@
     <!-- Hero -->
     <section class="hero">
       <p class="hero-kicker">Hello, I'm</p>
-      <h1>Stephen</h1>
+      <h1>Stephen George</h1>
       <p class="hero-role">Software Developer</p>
-      <p class="hero-tagline">I build things with code — from neural networks to everyday tools. Take a look at what I've been working on.</p>
+      <p class="hero-tagline">UT Dallas computer science grad building software that ships — from clinical research tools to ML-powered news feeds.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projects">View Projects</a>
         <a class="btn btn-ghost" href="https://github.com/KingOfLuckyGuessing" target="_blank" rel="noopener">GitHub Profile</a>
@@ -34,33 +34,24 @@
     <!-- Projects -->
     <section id="projects" class="section">
       <h2>Projects</h2>
-      <p class="section-sub">A selection of things I've built. <em>Template cards below — replace with real projects.</em></p>
+      <p class="section-sub">A selection of things I've built.</p>
       <div class="grid">
         <article class="card">
           <div class="card-thumb thumb-1"></div>
           <div class="card-body">
-            <h3>Project One</h3>
-            <p>Placeholder card. Short description of the project, what it does, and why it's interesting goes here.</p>
-            <div class="tags"><span>Python</span><span>Machine Learning</span></div>
-            <a class="card-link" href="#" aria-disabled="true">View Project →</a>
+            <h3>Personalized Topic-Specific News Feed</h3>
+            <p>End-to-end personalized content recommendation and summarization system. New users get a generated history of a topic; returning users get concise summaries of only what's new — powered by BERTopic modeling, a Neo4j graph + embedding hybrid retrieval pipeline, and RAG summarization with LLMs.</p>
+            <div class="tags"><span>Python</span><span>Neo4j</span><span>LangChain</span><span>NLP</span></div>
+            <a class="card-link" href="https://github.com/Jonathan-Serrano/historical-news" target="_blank" rel="noopener">View Project →</a>
           </div>
         </article>
         <article class="card">
           <div class="card-thumb thumb-2"></div>
           <div class="card-body">
-            <h3>Project Two</h3>
-            <p>Placeholder card. Short description of the project, what it does, and why it's interesting goes here.</p>
-            <div class="tags"><span>C++</span><span>Algorithms</span></div>
-            <a class="card-link" href="#" aria-disabled="true">View Project →</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-thumb thumb-3"></div>
-          <div class="card-body">
-            <h3>Project Three</h3>
-            <p>Placeholder card. Short description of the project, what it does, and why it's interesting goes here.</p>
-            <div class="tags"><span>JavaScript</span><span>Web</span></div>
-            <a class="card-link" href="#" aria-disabled="true">View Project →</a>
+            <h3>CardialSync — Time-Synchronization Web App</h3>
+            <p>Production web application built with UT Southwestern Medical Center clinicians and researchers. Engineered and containerized the backend computational logic in Docker, implementing a time-synchronization algorithm designed for reproducibility and future clinical use.</p>
+            <div class="tags"><span>Docker</span><span>Vue</span><span>Nuxt</span><span>MATLAB</span></div>
+            <a class="card-link" href="https://github.com/tenvoltz/CardialSync" target="_blank" rel="noopener">View Project →</a>
           </div>
         </article>
       </div>
@@ -71,13 +62,15 @@
       <h2>About</h2>
       <div class="about-wrap">
         <p>
-          I'm Stephen, a software developer who likes figuring out how things work —
-          whether that's teaching a neural network to read numbers or solving problems
-          one algorithm at a time. This page is a work in progress, just like everything else.
+          I'm Stephen George, a computer science master's student at UT Dallas (BS '25, 4.0 GPA).
+          I build production software — most recently automation tooling now used across 20+ Mathnasium
+          centers and a clinical research web app with UT Southwestern. I like working across the stack,
+          from signal processing in MATLAB to RAG pipelines in Python.
         </p>
         <div class="skills">
-          <span>Python</span><span>C++</span><span>JavaScript</span>
-          <span>HTML / CSS</span><span>Git</span><span>Machine Learning</span>
+          <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Java</span>
+          <span>C/C++</span><span>SQL</span><span>React</span><span>Node.js</span>
+          <span>Docker</span><span>PyTorch</span><span>LangChain</span><span>Git</span>
         </div>
       </div>
     </section>
@@ -85,13 +78,17 @@
     <!-- Contact -->
     <section id="contact" class="section">
       <h2>Get in Touch</h2>
-      <p class="section-sub">The best place to reach me right now is GitHub.</p>
-      <a class="btn btn-primary" href="https://github.com/KingOfLuckyGuessing" target="_blank" rel="noopener">Message me on GitHub</a>
+      <p class="section-sub">The best place to reach me is below.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/KingOfLuckyGuessing" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/stephengeorgeutd" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="mailto:stephen2015usa@gmail.com">Email</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Stephen · Built with plain HTML &amp; CSS, hosted on GitHub Pages</p>
+    <p>© 2026 Stephen George · Built with plain HTML &amp; CSS, hosted on GitHub Pages</p>
   </footer>
 </body>
 </html>
