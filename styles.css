@@ -214,3 +214,14 @@ body.modal-open { overflow: hidden; }
   .modal-body { padding: 1.25rem 1.25rem 1.5rem; }
   .modal-body h3 { font-size: 1.3rem; }
 }
+
+/* ---------- About portrait ---------- */
+.about-grid { display: grid; grid-template-columns: 220px 1fr; gap: 2.25rem; align-items: start; }
+.portrait {
+  width: 100%; border-radius: 16px; border: 1px solid var(--border);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 640px) {
+  .about-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .portrait { max-width: 230px; }
+}
