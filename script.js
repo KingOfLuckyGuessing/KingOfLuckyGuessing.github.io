@@ -77,7 +77,7 @@ const PROJECTS = {
   if (cardialThumb) {
     cardialThumb.innerHTML = PV_LOOP_SVG_INNER;
     const thumbSvg = cardialThumb.querySelector("svg");
-    if (thumbSvg) thumbSvg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+    if (thumbSvg) thumbSvg.setAttribute("preserveAspectRatio", "xMidYMid meet");
   }
 
   const overlay = document.getElementById("modal-overlay");
