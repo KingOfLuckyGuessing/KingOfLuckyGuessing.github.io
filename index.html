@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stephen George — Software Developer</title>
   <meta name="description" content="Portfolio of Stephen George, software developer. Projects, about, and contact." />
+  <!-- Social / link previews: this is what recruiters see when the URL
+  from the resume is pasted into LinkedIn, iMessage, Slack, etc. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kingofluckyguessing.github.io/" />
+  <meta property="og:title" content="Stephen George — Software Developer" />
+  <meta property="og:description" content="Portfolio of Stephen George, software developer. Projects, about, and contact." />
+  <meta property="og:image" content="https://kingofluckyguessing.github.io/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stephen George — Software Developer" />
+  <meta name="twitter:description" content="Portfolio of Stephen George, software developer. Projects, about, and contact." />
+  <meta name="twitter:image" content="https://kingofluckyguessing.github.io/og-card.png" />
+
+  <!-- Favicon: "S." mark in the site's accent colors, inline so no extra file is needed -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f17'/%3E%3Ctext x='30' y='45' font-family='system-ui,sans-serif' font-size='34' font-weight='800' text-anchor='middle' fill='%23e8edf5'%3ES%3C/text%3E%3Ccircle cx='46' cy='42' r='5' fill='%235eead4'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,7 +37,7 @@
     <section class="hero">
       <p class="hero-kicker">Hello, I'm</p>
       <h1>Stephen George</h1>
-      <p class="hero-role">Software Developer</p>
+      <p class="hero-role">Machine learning &amp; full-stack developer</p>
       <p class="hero-tagline">UT Dallas computer science grad building software that ships — from clinical research tools to ML-powered news feeds.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -34,10 +48,10 @@
     <!-- Projects -->
     <section id="projects" class="section">
       <h2>Projects</h2>
-      <p class="section-sub">A selection of things I've built. Click a card to explore.</p>
+      <p class="section-sub">A selection of things I've built.</p>
       <div class="grid">
         <article class="card" data-project="news" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details: Personalized Topic-Specific News Feed">
-          <div class="card-thumb thumb-1"></div>
+          <div class="card-thumb"><img src="https://raw.githubusercontent.com/Jonathan-Serrano/historical-news/main/full_graph.png" alt="Knowledge graph behind the news feed" loading="lazy" /></div>
           <div class="card-body">
             <h3>Personalized Topic-Specific News Feed</h3>
             <p>End-to-end personalized content recommendation and summarization system. New users get a generated history of a topic; returning users get concise summaries of only what's new — powered by BERTopic modeling, a Neo4j graph + embedding hybrid retrieval pipeline, and RAG summarization with LLMs.</p>
@@ -46,7 +60,7 @@
           </div>
         </article>
         <article class="card" data-project="cardial" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details: CardialSync">
-          <div class="card-thumb thumb-2"></div>
+          <div class="card-thumb" id="cardial-thumb"></div>
           <div class="card-body">
             <h3>CardialSync — Cardiac MRI Time Synchronization</h3>
             <p>Web application built with UT Southwestern Medical Center that uses the CircAdapt model and a time-synchronization algorithm to align pressure and volume data for accurate PV-loop analysis in children with congenital heart disease. The MATLAB computational core is compiled into a Docker microservice behind a Nuxt frontend.</p>
@@ -81,11 +95,10 @@
     <!-- Contact -->
     <section id="contact" class="section">
       <h2>Get in Touch</h2>
-      <p class="section-sub">The best place to reach me is below.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="https://github.com/KingOfLuckyGuessing" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-primary" href="mailto:stephen2015usa@gmail.com">Email</a>
+        <a class="btn btn-ghost" href="https://github.com/KingOfLuckyGuessing" target="_blank" rel="noopener">GitHub</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/stephengeorgeutd" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" href="mailto:stephen2015usa@gmail.com">Email</a>
       </div>
     </section>
   </main>

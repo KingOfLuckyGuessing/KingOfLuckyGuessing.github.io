@@ -1,7 +1,6 @@
 /* Project data + modal dialog logic (no frameworks, no build step). */
 
-const PV_LOOP_SVG = `
-<figure class="modal-figure">
+const PV_LOOP_SVG_INNER = `
   <svg viewBox="0 0 420 300" role="img" aria-label="Illustrative pressure-volume loop diagram">
     <defs>
       <linearGradient id="pvgrad" x1="0" y1="0" x2="1" y2="1">
@@ -21,7 +20,10 @@ const PV_LOOP_SVG = `
     <circle cx="355" cy="175" r="6" fill="#a78bfa"/>
     <text x="110" y="245" fill="#5eead4" font-size="12" text-anchor="middle">filling</text>
     <text x="355" y="205" fill="#a78bfa" font-size="12" text-anchor="middle">ejection</text>
-  </svg>
+  </svg>`;
+
+const PV_LOOP_SVG = `
+<figure class="modal-figure">${PV_LOOP_SVG_INNER}
   <figcaption>Illustrative pressure–volume loop — the signal CardialSync aligns</figcaption>
 </figure>`;
 
@@ -70,6 +72,14 @@ const PROJECTS = {
 };
 
 (function () {
+  // Card thumbnail: show the actual PV-loop diagram instead of a decorative gradient.
+  const cardialThumb = document.getElementById("cardial-thumb");
+  if (cardialThumb) {
+    cardialThumb.innerHTML = PV_LOOP_SVG_INNER;
+    const thumbSvg = cardialThumb.querySelector("svg");
+    if (thumbSvg) thumbSvg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+  }
+
   const overlay = document.getElementById("modal-overlay");
   const modalMedia = document.getElementById("modal-media");
   const modalTitle = document.getElementById("modal-title");
@@ -90,6 +100,8 @@ const PROJECTS = {
       const img = document.createElement("img");
       img.id = "modal-main-image";
       img.alt = project.images[0].caption;
+      img.style.opacity = "0";
+      img.onload = () => { img.style.opacity = "1"; };
       img.src = project.images[0].src;
       const caption = document.createElement("figcaption");
       caption.id = "modal-caption";
